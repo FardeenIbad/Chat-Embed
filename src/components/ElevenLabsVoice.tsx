@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { loadScript } from '../utils/scriptLoader';
 
 const ELEVENLABS_SCRIPT = 'https://ai.servquik.com/scripts/bots/buchanan-insurance/voice.js';
-const AGENT_ID = 'agent_2901k8keh3e6edhr65t7d2yc5pzd';
+const AGENT_ID = 'agent_6601k9d1jt5wevea78f4g2vw8515';
 
 // Declare the custom element type
 declare global {

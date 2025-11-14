@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { loadScript } from '../utils/scriptLoader';
 
 const BOTPRESS_SCRIPTS = [
-  'https://ai.servquik.com/scripts/bots/buchanan-insurance/inject.js',
-  'https://ai.servquik.com/scripts/bots/buchanan-insurance/buchanan.js'
+  'https://cdn.botpress.cloud/webchat/v3.3/inject.js',
+  'https://files.bpcontent.cloud/2025/09/12/17/20250912171025-3Y04F6R3.js'
 ];
 
 export const BotpressChat = () => {
@@ -15,7 +15,7 @@ export const BotpressChat = () => {
 
     const loadBotpress = async () => {
       try {
-        // Load scripts sequentially
+        // Load scripts sequentially - each script is only loaded once by loadScript utility
         for (const src of BOTPRESS_SCRIPTS) {
           await loadScript(src, { defer: true });
         }
@@ -55,8 +55,8 @@ export const BotpressChat = () => {
   }
 
   return (
-    <div style={{ width: '100%', height: '100%' }}>
-      {/* Botpress will inject itself into the page */}
+    <div id="chat-container" className="chat-container">
+      {/* Botpress will render inside this container */}
     </div>
   );
 };
