@@ -50,6 +50,7 @@ export const HybridWidget = () => {
                 Voice
               </button>
             </div>
+            <div>Version 2</div>
             <button
               className="hybrid-widget-close"
               onClick={closeWidget}
