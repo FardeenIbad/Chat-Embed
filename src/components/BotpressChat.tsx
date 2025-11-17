@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { loadScript } from '../utils/scriptLoader';
 
 const BOTPRESS_SCRIPTS = [
-  'https://cdn.botpress.cloud/webchat/v3.3/inject.js',
+  'https://cdn.botpress.cloud/webchat/v3.4/inject.js',
   'https://files.bpcontent.cloud/2025/09/12/17/20250912171025-3Y04F6R3.js'
 ];
 
